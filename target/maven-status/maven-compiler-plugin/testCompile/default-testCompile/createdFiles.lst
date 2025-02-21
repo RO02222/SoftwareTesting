@@ -1,0 +1,15 @@
+jpacman\TestAll.class
+jpacman\model\ObserverTest.class
+jpacman\model\EngineTest.class
+jpacman\model\CellTest.class
+jpacman\PacmanTest$EmptyMonsterController.class
+jpacman\model\GuestTest.class
+jpacman\model\ObserverTest$MyObserver.class
+jpacman\model\GameTest.class
+jpacman\model\GameTestCase.class
+jpacman\model\PlayerMoveTest.class
+jpacman\controller\ImageFactoryTest.class
+jpacman\model\BoardTest.class
+jpacman\TestUtils.class
+jpacman\PacmanTest.class
+jpacman\model\MoveTest.class
