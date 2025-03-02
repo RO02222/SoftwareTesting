@@ -1,4 +1,5 @@
 package jpacman.model;
+import java.lang.Math;
 
 
 /**
@@ -185,5 +186,30 @@ public class Cell {
     public Board getBoard() {
         assert invariant();
         return board;
+    }
+
+    /**
+     * Determine if the other cell is an immediate neighbour
+     * of the current cell (up, down, left, or right).
+     * Precondition: the other cell should lie within the same board.
+     * @return true if the other cell is immediately adjacent.
+     */
+    public boolean adjacent(Cell otherCell) {
+        assert getBoard() == otherCell.getBoard();
+        assert otherCell.boardInvariant();
+
+        boolean isAdjacent = false;
+
+        if (otherCell.getX() == getX())
+        {
+            isAdjacent = Math.abs(otherCell.getY() - getY()) == 1;
+        }
+        else if (otherCell.getY() == getY())
+        {
+            isAdjacent = Math.abs(otherCell.getX() - getX()) == 1;
+        }
+
+        assert invariant();
+        return isAdjacent;
     }
 }
