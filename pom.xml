@@ -29,8 +29,8 @@
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
           <configuration>
-              <source>23</source>
-              <target>23</target>
+              <source>21</source>
+              <target>21</target>
           </configuration>
         <version>3.13.0</version>
       </plugin>
@@ -65,9 +65,30 @@
         <version>2.3</version>
         <configuration>
           <forkMode>pertest</forkMode>
-          <argLine>-javaagent:${org.mockito:mockito-core:jar} -enableassertions</argLine>
+          <!--suppress UnresolvedMavenProperty -->
+            <argLine>-javaagent:${settings.localRepository}/org/jacoco/org.jacoco.agent/0.8.12/org.jacoco.agent-0.8.12-runtime.jar=destfile=target/jacoco.exec -enableassertions</argLine>
         </configuration>
       </plugin>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.12</version>
+            <executions>
+                <execution>
+                    <id>prepare-agent</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                </execution>
+                <execution>
+                    <id>report</id>
+                    <phase>site</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
     </plugins>
   </build>
 
