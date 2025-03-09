@@ -196,7 +196,7 @@ public class Game {
      * @param x x-position
      * @param y y-position
      */
-    private void addGuestFromCode(char code, int x, int y) {
+    void addGuestFromCode(char code, int x, int y) {
         assert getBoard() != null : "Board should exist";
         assert getBoard().withinBorders(x, y);
         Guest theGuest = null;
