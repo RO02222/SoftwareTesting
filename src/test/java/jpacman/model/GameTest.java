@@ -64,14 +64,7 @@ public class GameTest extends GameTestCase {
         assertEquals(-1, theGame.getPlayerLastDy());
     }
     
-    // source: https://www.baeldung.com/junit-assert-exception
-    // private void assertNoExceptionIsThrown(Executable executable) {
-    //     try {
-    //         executable.execute();
-    //     } catch (Exception e) {
-    //         fail(e.getClass().getSimpleName() + " was thrown");
-    //     }
-    // }
+
     // // Equivalence partitions for char
     // private char char_1 = 'W';
     // private char char_2 = 'Q';
@@ -83,7 +76,6 @@ public class GameTest extends GameTestCase {
     // private int y_1 = -1;
     // private int y_2 = 0;
     // private int y_3 = theGame.boardHeight();
-
     @Test(expected = AssertionError.class)
     public void testAddGuestFromCode111() {
         try {
