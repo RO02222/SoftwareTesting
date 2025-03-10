@@ -1,12 +1,11 @@
 package jpacman.model;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Before;
 import org.junit.Test;
 
 import jpacman.TestUtils;
+
+import static org.junit.Assert.*;
 
 /**
  * One of the simpler test classes, so a good point to start understanding
@@ -113,4 +112,65 @@ public class BoardTest {
     }
 
 
+//     // Equivalence partitions for x
+//     private int x_1 = -1;
+//     private int x_2 = 0; // width -1
+//     private int x_3 = width;
+//     // Equivalence partitions for y
+//     private int y_1 = -1;
+//     private int y_2 = 0; // height -1
+//     private int y_3 = theBoard.getHeight();
+
+    @Test
+    public void testWithinBoarders22() {
+        assertTrue(theBoard.withinBorders(0,0));
+        assertTrue(theBoard.withinBorders(width -1,0));
+        assertTrue(theBoard.withinBorders(0,height - 1));
+        assertTrue(theBoard.withinBorders(width -1,height -1));
+    }
+
+    @Test
+    public void testWithinBoarders12() {
+        assertFalse(theBoard.withinBorders(-1,0));
+        assertFalse(theBoard.withinBorders(-1,height -1));
+    }
+
+    @Test
+    public void testWithinBoarders32() {
+        assertFalse(theBoard.withinBorders(width,0));
+        assertFalse(theBoard.withinBorders(width,height -1));
+    }
+
+    @Test
+    public void testWithinBoarders21() {
+        assertFalse(theBoard.withinBorders(0,-1));
+        assertFalse(theBoard.withinBorders(width -1,-1));
+    }
+
+
+    @Test
+    public void testWithinBoarders23() {
+        assertFalse(theBoard.withinBorders(0,height));
+        assertFalse(theBoard.withinBorders(width -1,height));
+    }
+
+    @Test
+    public void testWithinBoarders11() {
+        assertFalse(theBoard.withinBorders(-1,-1));
+    }
+
+    @Test
+    public void testWithinBoarders13() {
+        assertFalse(theBoard.withinBorders(-1,height));
+    }
+
+    @Test
+    public void testWithinBoarders31() {
+        assertFalse(theBoard.withinBorders(width,-1));
+    }
+
+    @Test
+    public void testWithinBoarders33() {
+        assertFalse(theBoard.withinBorders(width,height));
+    }
 }
