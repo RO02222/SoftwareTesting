@@ -51,45 +51,15 @@ public class PlayerMoveTest extends MoveTest {
     }
 
     @Test
-    public void testPlayerMoveToFoodGuest(){
-        var oldFoodEaten = thePlayer.getPointsEaten();
-        var playerMove = createMove(foodCell);
-        assertTrue(playerMove.initialized());
-        var foodAmount = playerMove.getFoodEaten();
-        
-        assertTrue(playerMove.moveInvariant());
-        playerMove.apply();
-        
-        assertEquals(thePlayer.getLocation().getX(), foodCell.getX());
-        assertEquals(thePlayer.getLocation().getY(), foodCell.getY());
-        assertEquals(thePlayer.getPointsEaten(), oldFoodEaten + foodAmount);
-        assertFalse(playerMove.playerDies());
-        assertTrue(playerMove.invariant());
-    }
-    @Test
-    public void testPlayerMoveToEmptyGuest(){
-        var oldFoodEaten = thePlayer.getPointsEaten();
-        var playerMove = createMove(emptyCell);
-        assertTrue(playerMove.initialized());
-        
-        assertTrue(playerMove.moveInvariant());
-        playerMove.apply();
-
-        assertEquals(thePlayer.getLocation().getX(), emptyCell.getX());
-        assertEquals(thePlayer.getLocation().getY(), emptyCell.getY());
-        assertEquals(thePlayer.getPointsEaten(), oldFoodEaten);
-        assertFalse(playerMove.playerDies());
-        assertTrue(playerMove.invariant());
-    }
-    @Test
-    public void testPlayerMoveToWall() {
-        var playerMove = createMove(wallCell);
+    public void testPlayerMoveToPlayer() {
+        var playerMove = createMove(playerCell);
         assertTrue(playerMove.initialized());
 
         assertFalse(playerMove.movePossible());
         assertFalse(playerMove.playerDies());
         assertTrue(playerMove.invariant());
     }
+
     @Test
     public void testPlayerMoveToMonster() {
         var playerMove = createMove(monsterCell);
@@ -99,12 +69,48 @@ public class PlayerMoveTest extends MoveTest {
         assertTrue(playerMove.playerDies());
         assertTrue(playerMove.invariant());
     }
+
     @Test
-    public void testPlayerMoveToPlayer() {
-        var playerMove = createMove(playerCell);
+    public void testPlayerMoveToFood(){
+        var oldFoodEaten = thePlayer.getPointsEaten();
+        var playerMove = createMove(foodCell);
+        assertTrue(playerMove.initialized());
+        var foodAmount = playerMove.getFoodEaten();
+
+        assertTrue(playerMove.movePossible());
+        assertTrue(playerMove.invariant());
+        playerMove.apply();
+
+        assertEquals(thePlayer.getLocation().getX(), foodCell.getX());
+        assertEquals(thePlayer.getLocation().getY(), foodCell.getY());
+        assertEquals(thePlayer.getPointsEaten(), oldFoodEaten + foodAmount);
+        assertFalse(playerMove.playerDies());
+        assertTrue(playerMove.invariant());
+    }
+
+    @Test
+    public void testPlayerMoveToWall() {
+        var playerMove = createMove(wallCell);
         assertTrue(playerMove.initialized());
 
         assertFalse(playerMove.movePossible());
+        assertFalse(playerMove.playerDies());
+        assertTrue(playerMove.invariant());
+    }
+
+    @Test
+    public void testPlayerMoveToEmpty(){
+        var oldFoodEaten = thePlayer.getPointsEaten();
+        var playerMove = createMove(emptyCell);
+        assertTrue(playerMove.initialized());
+
+        assertTrue(playerMove.movePossible());
+        assertTrue(playerMove.invariant());
+        playerMove.apply();
+
+        assertEquals(thePlayer.getLocation().getX(), emptyCell.getX());
+        assertEquals(thePlayer.getLocation().getY(), emptyCell.getY());
+        assertEquals(thePlayer.getPointsEaten(), oldFoodEaten);
         assertFalse(playerMove.playerDies());
         assertTrue(playerMove.invariant());
     }

@@ -30,6 +30,14 @@ public class Wall extends Guest {
         return false;
     }
 
+    @Override
+    protected boolean meetMonster(MonsterMove aMove) {
+        assert guestInvariant();
+        assert aMove != null;
+        assert !aMove.initialized();
+        return false;
+    }
+
     /**
      * @see jpacman.model.Guest#guestType()
      * @return A character encoding for the wall.

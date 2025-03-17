@@ -1,5 +1,6 @@
 package jpacman;
 
+import jpacman.model.*;
 import junit.framework.JUnit4TestAdapter;
 
 import org.junit.runner.RunWith;
@@ -7,14 +8,6 @@ import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
 
 import jpacman.controller.ImageFactoryTest;
-
-import jpacman.model.BoardTest;
-import jpacman.model.CellTest;
-import jpacman.model.EngineTest;
-import jpacman.model.GameTest;
-import jpacman.model.ObserverTest;
-import jpacman.model.PlayerMoveTest;
-
 
 
 /**
@@ -42,6 +35,7 @@ import jpacman.model.PlayerMoveTest;
     EngineTest.class,
     ObserverTest.class,
     PlayerMoveTest.class,
+    MonsterMoveTest.class,
     ImageFactoryTest.class
 })
 
