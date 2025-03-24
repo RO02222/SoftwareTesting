@@ -1,0 +1,20 @@
+@startuml Engine
+state s_starting
+state s_playing
+state s_halted
+state s_gameover.died
+state s_gameover.won
+
+[*] --> s_starting
+' No initializing actiong on start to playing assume precondition
+s_starting --> s_playing : e_start
+s_playing --> s_playing : e_moveP_live,\n a_movingplayer
+s_playing --> s_playing : e_moveM_roam,\n a_movingmonster
+s_playing -> s_gameover.died : e_moveP_die
+s_playing --> s_gameover.died : e_moveM_kill,\n a_movingmonster
+s_playing --> s_gameover.won : e_moveP_win,\n a_movingplayer
+s_playing --> s_halted : e_quit,\n a_halting
+s_halted --> s_playing : e_start,\n a_resuming
+s_gameover --> s_playing : e_start,\n a_initializing
+
+@enduml
