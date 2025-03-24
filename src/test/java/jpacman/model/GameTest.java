@@ -1,13 +1,10 @@
 package jpacman.model;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotSame;
-import static org.junit.Assert.assertNull;
-import static org.junit.Assert.fail;
-
 import java.util.Vector;
 
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 /**
  * Series of test cases for the game itself.
@@ -243,5 +240,78 @@ public class GameTest extends GameTestCase {
         {
             assert false;
         }
+    }
+
+    protected Move createMove() {
+        var aMove = new PlayerMove(thePlayer, emptyCell);
+        return aMove;
+    }
+
+    @Test
+    public void testMovedStackPush() {
+        var move = createMove();
+        theGame.pushMoveStack(move);
+        var segment = theGame.popMoveStack();
+        assertFalse(segment.isEmpty());
+        assertEquals(segment.firstElement(), move);
+    }
+
+    @Test
+    public void testMovedStackPush10() {
+        for (int i = 0; i < 10; i++) {
+            theGame.pushMoveStack(createMove());
+        }
+        var segment = theGame.popMoveStack();
+        assertFalse(segment.isEmpty());
+        assertEquals(segment.size(), 10);
+    }
+
+    @Test
+    public void testMovedStackPopEmpty() {
+        theGame.pushMoveStack(createMove());
+        var segment = theGame.popMoveStack();
+        assertFalse(segment.isEmpty());
+        var segment2 = theGame.popMoveStack();
+        assertTrue(segment2.isEmpty());
+        var segment3 = theGame.popMoveStack();
+        assertTrue(segment3.isEmpty());
+    }
+
+    @Test
+    public void testMovedStackPopEmptySegments() {
+        theGame.nextSegMoveStack();
+        theGame.nextSegMoveStack();
+        theGame.nextSegMoveStack();
+        theGame.nextSegMoveStack();
+        theGame.nextSegMoveStack();
+        assertTrue(theGame.popMoveStack().isEmpty());
+        assertTrue(theGame.popMoveStack().isEmpty());
+        assertTrue(theGame.popMoveStack().isEmpty());
+        assertTrue(theGame.popMoveStack().isEmpty());
+        assertTrue(theGame.popMoveStack().isEmpty());
+    }
+
+    @Test
+    public void testMovedStackPopSegments() {
+        var move1 = createMove();
+        theGame.pushMoveStack(move1);
+        theGame.nextSegMoveStack();
+        var move2 = createMove();
+        theGame.pushMoveStack(move2);
+        theGame.nextSegMoveStack();
+        var move3 = createMove();
+        theGame.pushMoveStack(move3);
+        theGame.nextSegMoveStack();
+
+        assertTrue(theGame.popMoveStack().isEmpty());
+        var segment3 = theGame.popMoveStack();
+        assertFalse(segment3.isEmpty());
+        assertEquals(segment3.firstElement(), move3);
+        var segment2 = theGame.popMoveStack();
+        assertFalse(segment2.isEmpty());
+        assertEquals(segment2.firstElement(), move2);
+        var segment1 = theGame.popMoveStack();
+        assertFalse(segment1.isEmpty());
+        assertEquals(segment1.firstElement(), move1);
     }
 }

@@ -1,10 +1,9 @@
 package jpacman.model;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertEquals;
-
 import org.junit.Before;
 import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 
 /**
@@ -30,7 +29,8 @@ public class EngineTest extends GameTestCase {
      * (with a small map containing all sorts of guests)
      * created in the superclass.
      */
-    @Before public void setUp() {
+    @Before
+    public void setUp() {
         theEngine = new Engine(theGame);
         assertTrue(theEngine.inStartingState());
     }
@@ -297,5 +297,42 @@ public class EngineTest extends GameTestCase {
         assertTrue(theEngine.inWonState());
         assertTrue(theEngine.invariant());
         assertEquals(monsterLocation, theMonster.getLocation());
+    }
+
+    @Test
+    public void GameOverLostHaltedPathUndo() {
+        SetupGamoveOverDiedState();
+        assertTrue(theEngine.inGameOverState());
+        assertFalse(theEngine.inWonState());
+        assertTrue(theEngine.invariant());
+        theEngine.undo();
+        assertTrue(theEngine.inHaltedState());
+        assertTrue(theEngine.invariant());
+    }
+
+    @Test
+    public void GameOverWonHaltedPathUndo() {
+        SetupGamoveOverWonState();
+        assertTrue(theEngine.inGameOverState());
+        assertTrue(theEngine.inWonState());
+        assertTrue(theEngine.invariant());
+        theEngine.undo();
+        assertTrue(theEngine.inHaltedState());
+        assertTrue(theEngine.invariant());
+    }
+
+    @Test
+    public void StartingHaltedPathUndo() {
+        assert theEngine.inStartingState();
+        SetupPlayingState();
+        theEngine.movePlayer(-1, 0);
+        assertTrue(theEngine.inPlayingState());
+        assertTrue(theEngine.invariant());
+        theEngine.undo();
+        assertTrue(theEngine.inHaltedState());
+        assertTrue(theEngine.invariant());
+        theEngine.undo();
+        assertTrue(theEngine.inHaltedState());
+        assertTrue(theEngine.invariant());
     }
 }

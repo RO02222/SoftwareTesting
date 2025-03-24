@@ -16,5 +16,8 @@ s_playing --> s_gameover.won : e_moveP_win,\n a_movingplayer
 s_playing --> s_halted : e_quit,\n a_halting
 s_halted --> s_playing : e_start,\n a_resuming
 s_gameover --> s_playing : e_start,\n a_initializing
+s_playing --> s_halted : e_undo,\n a_undo
+s_gameover --> s_halted : e_undo,\n a_undo
+s_halted --> s_halted : e_undo,\n a_undo
 
 @enduml

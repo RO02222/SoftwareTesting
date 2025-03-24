@@ -42,7 +42,7 @@ public class Game {
     /**
      * The executed moves for each step.
      */
-    private Vector<Vector<Move>> movedStack;
+    private Vector<Vector<Move>> movedStack = new Vector<>();;
 
 
     /**
@@ -50,8 +50,7 @@ public class Game {
      */
     public Game() {
         this(DEFAULT_WORLD_MAP);
-        movedStack = new Vector<Vector<Move>>();
-        movedStack.add(new Vector<Move>(20));
+        movedStack.add(new Vector<Move>());
     }
 
     /**
@@ -72,9 +71,8 @@ public class Game {
         totalPoints = 0;
         thePlayer = null;
         theBoard = null;
+        movedStack.add(new Vector<>());
         loadWorld(theMap);
-        movedStack = new Vector<Vector<Move>>();
-        movedStack.add(new Vector<Move>(20));
         assert invariant();
     }
 
@@ -432,7 +430,7 @@ public class Game {
      * @param move the move executed
      */
     protected void pushMoveStack(Move move) {
-        assert movedStack != null && movedStack.size() >= 1;
+        assert movedStack != null && !movedStack.isEmpty();
         movedStack.lastElement().add(move);
         assert movedStack.lastElement().contains(move);
     }
