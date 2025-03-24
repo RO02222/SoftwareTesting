@@ -92,6 +92,13 @@ public class PacmanUI extends JFrame implements KeyListener, Observer {
             }
         });
 
+        JButton undoButton = new JButton("Undo");
+        undoButton.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent e) {
+                getController().undo();
+            }
+        });
+        undoButton.requestFocusInWindow();
 
 
         JButton exitButton = new JButton("Exit");
@@ -103,6 +110,7 @@ public class PacmanUI extends JFrame implements KeyListener, Observer {
 
         JPanel buttonPanel = new JPanel();
         buttonPanel.add(startButton);
+        buttonPanel.add(undoButton);
         buttonPanel.add(quitButton);
         buttonPanel.add(exitButton);
 

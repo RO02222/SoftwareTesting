@@ -23,6 +23,17 @@ public abstract class Move {
 
 
     /**
+     * The initial location of the move.
+     */
+    private Cell fromCell = null;
+
+    /**
+     * The guest who is present at the target cell.
+     */
+    private Guest targetGuest = null;
+
+
+    /**
      * The target cell the mover would like to go to.
      */
     private Cell to = null;
@@ -59,7 +70,9 @@ public abstract class Move {
         assert toCell == null
         || fromGuest.getLocation().getBoard() == toCell.getBoard();
         this.mover = fromGuest;
+        this.fromCell = fromGuest.getLocation();
         this.to = toCell;
+        this.targetGuest = toCell.getInhabitant();
         assert moveInvariant() : "Move invariant invalid";
     }
 
@@ -71,8 +84,9 @@ public abstract class Move {
      */
     public boolean moveInvariant() {
         return mover != null
+            && fromCell != null
             && mover.getLocation() != null
-            && (initialized ? !(movePossible() && playerDies) : true);
+            && (!initialized || !(movePossible() && playerDies));
     }
 
     /**
@@ -175,8 +189,6 @@ public abstract class Move {
         assert initialized();
         assert movePossible() : "Cannot execute an impossible move.";
 
-        Cell fromCell = mover.getLocation();
-        Guest targetGuest = to.getInhabitant();
         if (targetGuest != null) {
             // actually only necessary for food if
             // the player moves...
@@ -185,8 +197,34 @@ public abstract class Move {
         mover.deoccupy();
         mover.occupy(to);
 
+        assert this.fromCell.getInhabitant() == null : "old cell should be freed";
+        assert moveDone();
+        assert initialized();
+    }
+
+
+    /**
+     * Actually carry out the move. precondition: the move is possible.
+     * postcondition: the old cell is empty, the target cell is occupied by the
+     * mover.
+     */
+    protected void undo() {
         assert fromCell.getInhabitant() == null : "old cell should be freed";
         assert moveDone();
+        assert initialized();
+
+
+        mover.deoccupy();
+        mover.occupy(fromCell);
+
+        if (targetGuest != null) {
+            // actually only necessary for food if
+            // the player moves...
+            targetGuest.occupy(to);
+        }
+
+        assert !moveDone();
+        assert movePossible();
         assert initialized();
     }
 
@@ -217,7 +255,4 @@ public abstract class Move {
         assert mover.getLocation() != null;
         return to != null && mover.getLocation().equals(to);
     }
-
-
-
 }

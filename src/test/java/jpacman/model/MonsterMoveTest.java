@@ -96,7 +96,32 @@ public class MonsterMoveTest extends MoveTest {
         assertEquals(theMonster.getLocation().getX(), emptyCell.getX());
         assertEquals(theMonster.getLocation().getY(), emptyCell.getY());
 
+        assertTrue(monsterMove.moveDone());
         assertFalse(monsterMove.playerDies());
         assertTrue(monsterMove.invariant());
+    }
+
+
+
+    @Test
+    public void testMonsterMoveUndoToEmpty() {
+        var monsterMove = createMove(emptyCell);
+        var originalLocation = theMonster.getLocation();
+        var originalInhabitant = emptyCell.getInhabitant();
+
+        assertTrue(monsterMove.movePossible());
+        monsterMove.apply();
+        assertTrue(monsterMove.invariant());
+        assertTrue(theMonster.guestInvariant());
+        assertTrue(monsterMove.moveDone());
+
+        monsterMove.undo();
+
+        assertEquals(theMonster.getLocation(), originalLocation);
+        assertEquals(emptyCell.getInhabitant(), originalInhabitant);
+        assertFalse(theGame.playerDied());
+        assertTrue(monsterMove.movePossible());
+        assertTrue(monsterMove.invariant());
+        assertTrue(theMonster.guestInvariant());
     }
 }

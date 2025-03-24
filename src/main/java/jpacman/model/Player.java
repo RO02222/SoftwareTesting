@@ -86,6 +86,17 @@ public class Player extends MovingGuest {
         assert playerInvariant();
     }
 
+    /**
+     * The player has revived somehow.
+     * Precondition: player is killed before.
+     */
+    protected void revive() {
+        assert playerInvariant();
+        assert !living();
+        alive = true;
+        assert playerInvariant();
+    }
+
 
     /**
      * Another player wants to occupy this player's state. With one player

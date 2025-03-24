@@ -125,6 +125,17 @@ public class Pacman {
     }
 
     /**
+     * Undo the last move.
+     */
+    public void undo() {
+        assert invariant();
+        monsterTicker.stop();
+        theEngine.quit();
+        theEngine.undo();
+        assert invariant();
+    }
+
+    /**
      * Respond to an up request from the GUI.
      */
     public void up() {

@@ -88,6 +88,16 @@ Actor: player
 1. The game is over (the player won or the player died)
 2. The user can press the start button to restart another game.
 
+UC10: Undo Move Use Case.
+Actor: player
+1. Entry condition: The player is playing or just died.
+2. The player presses the undo button
+3. The player and the monsters are moved back to the cell they occupied
+before the last move.
+4. The game enters the halting state.
+4. Any food eaten during the last move is restored.
+4. The points earned are restored are restored.
+
 
 GUI: User Interface Requirements.
 The user interface for JPacman is relatively simple.  The game size is

@@ -40,9 +40,10 @@ public class PlayerMoveTest extends MoveTest {
 
     /**
      * Create a move object that will be tested.
-     *  @see jpacman.model.MoveTest#createMove(jpacman.model.Cell)
-     *  @param target The cell to be occupied by the move.
-     *  @return The move to be tested.
+     *
+     * @param target The cell to be occupied by the move.
+     * @return The move to be tested.
+     * @see jpacman.model.MoveTest#createMove(jpacman.model.Cell)
      */
     @Override
     protected PlayerMove createMove(Cell target) {
@@ -71,7 +72,7 @@ public class PlayerMoveTest extends MoveTest {
     }
 
     @Test
-    public void testPlayerMoveToFood(){
+    public void testPlayerMoveToFood() {
         var oldFoodEaten = thePlayer.getPointsEaten();
         var playerMove = createMove(foodCell);
         assertTrue(playerMove.initialized());
@@ -85,6 +86,7 @@ public class PlayerMoveTest extends MoveTest {
         assertEquals(thePlayer.getLocation().getY(), foodCell.getY());
         assertEquals(thePlayer.getPointsEaten(), oldFoodEaten + foodAmount);
         assertFalse(playerMove.playerDies());
+        assertTrue(playerMove.moveDone());
         assertTrue(playerMove.invariant());
     }
 
@@ -99,11 +101,10 @@ public class PlayerMoveTest extends MoveTest {
     }
 
     @Test
-    public void testPlayerMoveToEmpty(){
+    public void testPlayerMoveToEmpty() {
         var oldFoodEaten = thePlayer.getPointsEaten();
         var playerMove = createMove(emptyCell);
         assertTrue(playerMove.initialized());
-
         assertTrue(playerMove.movePossible());
         assertTrue(playerMove.invariant());
         playerMove.apply();
@@ -112,6 +113,53 @@ public class PlayerMoveTest extends MoveTest {
         assertEquals(thePlayer.getLocation().getY(), emptyCell.getY());
         assertEquals(thePlayer.getPointsEaten(), oldFoodEaten);
         assertFalse(playerMove.playerDies());
+        assertTrue(playerMove.moveDone());
         assertTrue(playerMove.invariant());
+    }
+
+    @Test
+    public void testPlayerMoveUndoToEmpty() {
+        var playerMove = createMove(emptyCell);
+        var originalLocation = thePlayer.getLocation();
+        var originalPoints = thePlayer.getPointsEaten();
+        var originalInhabitant = emptyCell.getInhabitant();
+        assertTrue(playerMove.movePossible());
+        playerMove.apply();
+        assertTrue(playerMove.invariant());
+        assertTrue(thePlayer.playerInvariant());
+        assertTrue(playerMove.moveDone());
+
+        playerMove.undo();
+
+        assertEquals(thePlayer.getLocation(), originalLocation);
+        assertEquals(thePlayer.getPointsEaten(), originalPoints);
+        assertEquals(emptyCell.getInhabitant(), originalInhabitant);
+        assertFalse(theGame.playerDied());
+        assertTrue(playerMove.movePossible());
+        assertTrue(playerMove.invariant());
+        assertTrue(thePlayer.playerInvariant());
+    }
+
+    @Test
+    public void testPlayerMoveUndoToFood() {
+        var playerMove = createMove(foodCell);
+        var originalLocation = thePlayer.getLocation();
+        var originalPoints = thePlayer.getPointsEaten();
+        var originalInhabitant = foodCell.getInhabitant();
+        assertTrue(playerMove.movePossible());
+        playerMove.apply();
+        assertTrue(playerMove.invariant());
+        assertTrue(thePlayer.playerInvariant());
+        assertTrue(playerMove.moveDone());
+
+        playerMove.undo();
+
+        assertEquals(thePlayer.getLocation(), originalLocation);
+        assertEquals(thePlayer.getPointsEaten(), originalPoints);
+        assertEquals(foodCell.getInhabitant(), originalInhabitant);
+        assertFalse(theGame.playerDied());
+        assertTrue(playerMove.movePossible());
+        assertTrue(playerMove.invariant());
+        assertTrue(thePlayer.playerInvariant());
     }
 }

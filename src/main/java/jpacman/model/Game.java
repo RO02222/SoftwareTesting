@@ -39,6 +39,11 @@ public class Game {
      */
     private String[] theMap;
 
+    /**
+     * The executed moves for each step.
+     */
+    private Vector<Vector<Move>> movesDone = new Vector<>(20);
+
 
     /**
      * Create a new Game using a default map.
@@ -274,6 +279,7 @@ public class Game {
         Cell targetCell =
             getPlayer().getLocation().cellAtOffset(dx, dy);
         PlayerMove playerMove = new PlayerMove(getPlayer(), targetCell);
+        movesDone.add(new Vector<>(monsters.size() +1));
         applyMove(playerMove);
         getPlayer().setLastDirection(dx, dy);
         assert invariant();
@@ -288,6 +294,7 @@ public class Game {
         assert move != null;
         assert invariant();
         assert !gameOver();
+        movesDone.lastElement().add(move);
         if (move.movePossible()) {
             move.apply();
             assert move.moveDone();
@@ -302,6 +309,24 @@ public class Game {
         assert invariant();
     }
 
+    /**
+     * Undo the last moves.
+     */
+    public void undo() {
+        assert invariant();
+        if (movesDone.size() == 0) {
+            return;
+        }
+        for (Move move : movesDone.removeLast()) {
+            if (move.moveDone()){
+                move.undo();
+            }
+            if (move.playerDies()){
+                getPlayer().revive();
+            }
+        }
+        assert invariant();
+    }
 
     /**
      * Check if the player has died. Precondition: initialization completed.
