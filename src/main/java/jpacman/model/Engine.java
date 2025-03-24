@@ -163,7 +163,6 @@ public class Engine extends Observable {
                 if (inGameOverState()) {
                     assert !starting;
                     theGame.initialize();
-                    starting = true;
                 }
             }
         }

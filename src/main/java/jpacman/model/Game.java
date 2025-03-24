@@ -42,7 +42,7 @@ public class Game {
     /**
      * The executed moves for each step.
      */
-    private Vector<Vector<Move>> movedStack = new Vector<>(20);
+    private Vector<Vector<Move>> movedStack;
 
 
     /**
@@ -50,6 +50,8 @@ public class Game {
      */
     public Game() {
         this(DEFAULT_WORLD_MAP);
+        movedStack = new Vector<Vector<Move>>();
+        movedStack.add(new Vector<Move>(20));
     }
 
     /**
@@ -71,6 +73,8 @@ public class Game {
         thePlayer = null;
         theBoard = null;
         loadWorld(theMap);
+        movedStack = new Vector<Vector<Move>>();
+        movedStack.add(new Vector<Move>(20));
         assert invariant();
     }
 
@@ -261,7 +265,7 @@ public class Game {
         assert invariant();
     }
 
-        /**
+    /**
      * Move the player to offsets (x+dx,y+dy). If the move is not possible
      * (wall, beyond borders), the move is not carried out. Precondition:
      * initialized and game isn't over yet. Postcondition: if the move is
@@ -277,36 +281,11 @@ public class Game {
         assert invariant();
         assert !gameOver() : "can only move when game isn't over";
         Cell targetCell =
-            getPlayer().getLocation().cellAtOffset(dx, dy);
-        MonsterMove playerMove = new MonsterMove(monster, targetCell);
-        movesDone.add(new Vector<>(monsters.size() +1));
-        applyMove(playerMove);
-        getPlayer().setLastDirection(dx, dy);
+            monster.getLocation().cellAtOffset(dx, dy);
+        MonsterMove monsterMove = new MonsterMove(monster, targetCell);
+        applyMove(monsterMove);
         assert invariant();
     }
-
-    // /**
-    //  * Actually apply the given move, if it is possible.
-    //  * @param move The move to be made.
-    //  */
-    // private void applyMove(Move move) {
-    //     assert move != null;
-    //     assert invariant();
-    //     assert !gameOver();
-    //     movesDone.lastElement().add(move);
-    //     if (move.movePossible()) {
-    //         move.apply();
-    //         assert move.moveDone();
-    //         assert !playerDied() : "move possible => not killed";
-    //     } else {
-    //         if (move.playerDies()) {
-    //             assert !playerWon() : "you can't win by dying";
-    //             getPlayer().die();
-    //             assert playerDied();
-    //         }
-    //     }
-    //     assert invariant();
-    // }
 
     /**
      * Move the player to offsets (x+dx,y+dy). If the move is not possible
