@@ -261,6 +261,53 @@ public class Game {
         assert invariant();
     }
 
+        /**
+     * Move the player to offsets (x+dx,y+dy). If the move is not possible
+     * (wall, beyond borders), the move is not carried out. Precondition:
+     * initialized and game isn't over yet. Postcondition: if the move is
+     * possible, it has been carried out, and the game has been updated to
+     * reflect the new situation.
+     *
+     * @param dx
+     *            Horizontal movement
+     * @param dy
+     *            Vertical movement
+     */
+    void moveMonster(Monster monster, int dx, int dy) {
+        assert invariant();
+        assert !gameOver() : "can only move when game isn't over";
+        Cell targetCell =
+            getPlayer().getLocation().cellAtOffset(dx, dy);
+        MonsterMove playerMove = new MonsterMove(monster, targetCell);
+        movesDone.add(new Vector<>(monsters.size() +1));
+        applyMove(playerMove);
+        getPlayer().setLastDirection(dx, dy);
+        assert invariant();
+    }
+
+    // /**
+    //  * Actually apply the given move, if it is possible.
+    //  * @param move The move to be made.
+    //  */
+    // private void applyMove(Move move) {
+    //     assert move != null;
+    //     assert invariant();
+    //     assert !gameOver();
+    //     movesDone.lastElement().add(move);
+    //     if (move.movePossible()) {
+    //         move.apply();
+    //         assert move.moveDone();
+    //         assert !playerDied() : "move possible => not killed";
+    //     } else {
+    //         if (move.playerDies()) {
+    //             assert !playerWon() : "you can't win by dying";
+    //             getPlayer().die();
+    //             assert playerDied();
+    //         }
+    //     }
+    //     assert invariant();
+    // }
+
     /**
      * Move the player to offsets (x+dx,y+dy). If the move is not possible
      * (wall, beyond borders), the move is not carried out. Precondition:
@@ -284,7 +331,6 @@ public class Game {
         getPlayer().setLastDirection(dx, dy);
         assert invariant();
     }
-
 
     /**
      * Actually apply the given move, if it is possible.
