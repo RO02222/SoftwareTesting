@@ -71,4 +71,16 @@ public class MonsterMove extends Move {
         super.apply();
         assert invariant();
     }
+
+    /**
+     * undo the move, assuming it has been done
+     */
+    @Override
+    public void undo() {
+        assert invariant();
+        assert moveDone();
+        super.undo();
+        assert movePossible();
+        assert invariant();
+    }
 }

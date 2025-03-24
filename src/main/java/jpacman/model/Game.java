@@ -42,7 +42,7 @@ public class Game {
     /**
      * The executed moves for each step.
      */
-    private Vector<Vector<Move>> movesDone = new Vector<>(20);
+    private Vector<Vector<Move>> movedStack = new Vector<>(20);
 
 
     /**
@@ -279,7 +279,7 @@ public class Game {
         Cell targetCell =
             getPlayer().getLocation().cellAtOffset(dx, dy);
         PlayerMove playerMove = new PlayerMove(getPlayer(), targetCell);
-        movesDone.add(new Vector<>(monsters.size() +1));
+        nextSegMoveStack();
         applyMove(playerMove);
         getPlayer().setLastDirection(dx, dy);
         assert invariant();
@@ -294,7 +294,7 @@ public class Game {
         assert move != null;
         assert invariant();
         assert !gameOver();
-        movesDone.lastElement().add(move);
+        pushMoveStack(move);
         if (move.movePossible()) {
             move.apply();
             assert move.moveDone();
@@ -314,10 +314,7 @@ public class Game {
      */
     public void undo() {
         assert invariant();
-        if (movesDone.size() == 0) {
-            return;
-        }
-        for (Move move : movesDone.removeLast()) {
+        for (Move move : popMoveStack()) {
             if (move.moveDone()){
                 move.undo();
             }
@@ -403,5 +400,38 @@ public class Game {
      */
     public char getGuestCode(int x, int y) {
         return getBoard().guestCode(x, y);
+    }
+
+    /**
+     * Adds the move to the stack
+     * @param move the move executed
+     */
+    protected void pushMoveStack(Move move) {
+        assert movedStack != null && movedStack.size() >= 1;
+        movedStack.lastElement().add(move);
+        assert movedStack.lastElement().contains(move);
+    }
+
+    /**
+     * Adds a new segment to the stack
+     */
+    protected void nextSegMoveStack() {
+        assert movedStack != null;
+        movedStack.add(new Vector<Move>());
+    }
+
+
+    /**
+     * Pop the movedStack
+     * @return A list containing all moves happened after the segment created.
+     */
+    protected Vector<Move> popMoveStack() {
+        assert movedStack != null && !movedStack.isEmpty();
+        var retval = movedStack.removeLast();
+        if (movedStack.isEmpty()) {
+            nextSegMoveStack();
+        }
+        assert !movedStack.isEmpty();
+        return retval;
     }
 }

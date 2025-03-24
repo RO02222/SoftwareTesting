@@ -108,7 +108,9 @@ public class PlayerMove extends Move {
         assert invariant();
     }
 
-
+    /**
+     * undo the move, assuming it has been done
+     */
     @Override
     public void undo() {
         assert invariant();

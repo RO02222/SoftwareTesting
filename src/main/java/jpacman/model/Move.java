@@ -204,9 +204,8 @@ public abstract class Move {
 
 
     /**
-     * Actually carry out the move. precondition: the move is possible.
-     * postcondition: the old cell is empty, the target cell is occupied by the
-     * mover.
+     * Undo the move. precondition: the move has been applied.
+     * precondition: the old cell is empty, the target cell is occupied by the mover.
      */
     protected void undo() {
         assert fromCell.getInhabitant() == null : "old cell should be freed";
