@@ -1,1 +1,4 @@
 /target
+/LittleDarwinResults
+/fuzzer/fuzzed_maps
+/fuzzer/fuzzing.log
