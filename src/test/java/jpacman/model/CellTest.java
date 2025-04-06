@@ -44,6 +44,7 @@ public class CellTest {
      */
     @Mock
     private Cell mockedCell;
+
     /**
      * Actually create the board and the cell. *
      */
@@ -56,7 +57,7 @@ public class CellTest {
 
         // Lars
         // Setup mocked Cell(1,1)
-        mockedCell = mock(); 
+        mockedCell = mock();
         // when(mockedCell.getX()).thenReturn(1);
         // when(mockedCell.getY()).thenReturn(1);
         when(mockedCell.invariant()).thenReturn(true);
@@ -81,9 +82,9 @@ public class CellTest {
     // @Test
     // public void testCellAdjacent1() {
     //     Cell otherCell = new Cell(1, 2, aBoard);
-        
+
     //     assertTrue("Cell should be adjacent.", cell11.adjacent(otherCell));
-        
+
     //     assertTrue(cell11.invariant());
     // }
 
@@ -91,9 +92,9 @@ public class CellTest {
     // @Test
     // public void testCellAdjacent2() {
     //     Cell otherCell = new Cell(1, 0, aBoard);
-        
+
     //     assertTrue("Cell should be adjacent.", cell11.adjacent(otherCell));
-        
+
     //     assertTrue(cell11.invariant());
     // }
 
@@ -101,9 +102,9 @@ public class CellTest {
     // @Test
     // public void testCellAdjacent3() {
     //     Cell otherCell = new Cell(2, 1, aBoard);
-        
+
     //     assertTrue("Cell should be adjacent.", cell11.adjacent(otherCell));
-        
+
     //     assertTrue(cell11.invariant());
     // }
 
@@ -111,9 +112,9 @@ public class CellTest {
     // @Test
     // public void testCellAdjacent4() {
     //     Cell otherCell = new Cell(0, 1, aBoard);
-        
+
     //     assertTrue("Cell should be adjacent.", cell11.adjacent(otherCell));
-        
+
     //     assertTrue(cell11.invariant());
     // }
 
@@ -129,9 +130,9 @@ public class CellTest {
     // @Test
     // public void testCellAdjacent6() {
     //     Cell otherCell = new Cell(0, 0, aBoard);
-        
+
     //     assertFalse("Cell should not be adjacent.", cell11.adjacent(otherCell));
-        
+
     //     assertTrue(cell11.invariant());
     // }
 
@@ -142,7 +143,7 @@ public class CellTest {
         when(mockedCell.adjacent(otherCell)).thenReturn(true);
 
         assertTrue("Cell should be adjacent.", mockedCell.adjacent(otherCell));
-        
+
         assertTrue(mockedCell.invariant());
     }
 
@@ -153,7 +154,7 @@ public class CellTest {
         when(mockedCell.adjacent(otherCell)).thenReturn(true);
 
         assertTrue("Cell should be adjacent.", mockedCell.adjacent(otherCell));
-        
+
         assertTrue(mockedCell.invariant());
     }
 
@@ -164,7 +165,7 @@ public class CellTest {
         when(mockedCell.adjacent(otherCell)).thenReturn(true);
 
         assertTrue("Cell should be adjacent.", mockedCell.adjacent(otherCell));
-        
+
         assertTrue(mockedCell.invariant());
     }
 
@@ -175,7 +176,7 @@ public class CellTest {
         when(mockedCell.adjacent(otherCell)).thenReturn(true);
 
         assertTrue("Cell should be adjacent.", mockedCell.adjacent(otherCell));
-        
+
         assertTrue(mockedCell.invariant());
     }
 
@@ -195,7 +196,54 @@ public class CellTest {
         when(mockedCell.adjacent(otherCell)).thenReturn(false);
 
         assertFalse("Cell should not be adjacent.", mockedCell.adjacent(otherCell));
-        
+
         assertTrue(mockedCell.invariant());
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testInvalidCellCreation() {
+        try {
+            Cell cell = new Cell(20, 20, aBoard);
+        } catch (Exception e) {
+            assert false;
+        }
+    }
+
+    @Test
+    public void testAdjacentNotZeroLocationX() {
+        Cell cell = new Cell(1, 1, aBoard);
+        Cell other = new Cell(2, 1, aBoard);
+        assertTrue(cell.adjacent(other));
+    }
+
+    @Test
+    public void testAdjacentNotZeroLocationY() {
+        Cell cell = new Cell(1, 1, aBoard);
+        Cell other = new Cell(1, 2, aBoard);
+        assertTrue(cell.adjacent(other));
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testAdjacentDifferentBoard() {
+        try {
+            Cell cell = new Cell(1, 1, aBoard);
+            Board otherBoard = new Board(width, height);
+            Cell other = new Cell(2, 1, otherBoard);
+            cell.adjacent(other);
+        } catch (Exception e) {
+            assert false;
+        }
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testFreeWhileOccupied() {
+        try {
+            Cell cell = new Cell(1, 1, aBoard);
+            Player player = new Player();
+            player.occupy(cell);
+            cell.free();
+        } catch (Exception e) {
+            assert false;
+        }
     }
 }

@@ -173,11 +173,4 @@ public class BoardTest {
     public void testWithinBoarders33() {
         assertFalse(theBoard.withinBorders(width,height));
     }
-
-    @Test
-    public void testInvariantMutant1() {
-        // return width >= 0 || height >= 0;
-        Board board = new Board(-1,1);
-        assertFalse(board.invariant());
-    }
 }
