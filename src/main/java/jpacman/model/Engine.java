@@ -176,6 +176,9 @@ public class Engine extends Observable {
      */
     public synchronized void undo() {
         assert invariant();
+        if (inStartingState()) {
+            return;
+        }
         theGame.undo();
         halted = true;
         notifyViewers();

@@ -162,4 +162,10 @@ public class PlayerMoveTest extends MoveTest {
         assertTrue(playerMove.invariant());
         assertTrue(thePlayer.playerInvariant());
     }
+
+    @Test
+    public void testTryMoveToNull() {
+        var playerMove = createMove(foodCell);
+        assertFalse(playerMove.tryMoveToGuestPrecondition(null));
+    }
 }

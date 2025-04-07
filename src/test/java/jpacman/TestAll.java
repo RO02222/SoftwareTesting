@@ -31,6 +31,7 @@ import jpacman.controller.ImageFactoryTest;
     PacmanTest.class,
     BoardTest.class,
     CellTest.class,
+    FoodTest.class,
     GameTest.class,
     EngineTest.class,
     ObserverTest.class,
