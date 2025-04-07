@@ -4,8 +4,8 @@ import random
 import time
 from collections import defaultdict
 
-MAX_ITERATIONS = 1000
-MAX_TIME = 100 # seconds
+MAX_ITERATIONS = 10000
+MAX_TIME = 1000 # seconds
 ACTIONS = ['E', 'S', 'U', 'D', 'Q', 'W', 'L', 'R']
 
 def run_jar(jar_path, args=None, timeout=None):
