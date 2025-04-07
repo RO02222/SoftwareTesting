@@ -62,11 +62,9 @@ if __name__ == "__main__":
     return_code_count = defaultdict(int)
     stdout_count = defaultdict(int)
 
-    with open(LOG_FILENAME, 'w') as f:
-        # Create log file
-        pass
-    if not os.path.exists("fuzzed_maps"):
-        os.mkdir("fuzzed_maps")
+    f = open(LOG_FILENAME, 'w')
+    if not os.path.exists("fuzzed_maps_improved"):
+        os.mkdir("fuzzed_maps_improved")
     for iteration in range(MAX_ITERATIONS):
         current_time = time.time()
         if current_time - start_time > MAX_TIME:
@@ -82,8 +80,9 @@ if __name__ == "__main__":
             stdout_count[stdout] += 1
             if code != 0:
                 fuzzed_filename = f"fuzz_{iteration}.map" 
-                os.rename(FUZZ_FILENAME, f"fuzzed_maps/{fuzzed_filename}")
+                os.rename(FUZZ_FILENAME, f"fuzzed_maps_improved/{fuzzed_filename}")
                 append_to_log(LOG_FILENAME, stdout, stderr, code, fuzzed_filename, fuzzed_actions)
+    f.close()
 
     print("=" * 20)
     for code, count in return_code_count.items():

@@ -1,0 +1,4224 @@
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_0.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_1.mapfuzzed actions: REWRRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_2.mapfuzzed actions: UWQSWEQR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_3.mapfuzzed actions: RDDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_5.mapfuzzed actions: EQEL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_6.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_7.mapfuzzed actions: WLUUUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_8.mapfuzzed actions: DQRLWQSDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_9.mapfuzzed actions: LWREQRDQLE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_10.mapfuzzed actions: EDEUEQQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_11.mapfuzzed actions: WRRUWLUW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_12.mapfuzzed actions: LU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_13.mapfuzzed actions: UWDDRULU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_14.mapfuzzed actions: LRE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_15.mapfuzzed actions: WQEUWRUQQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.IllegalArgumentException: bound must be positive
+	at java.base/java.util.Random.nextInt(Random.java:557)
+	at jpacman.controller.AbstractMonsterController.getRandomMonster(AbstractMonsterController.java:116)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:36)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_16.mapfuzzed actions: LS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_17.mapfuzzed actions: RSUUWEE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_18.mapfuzzed actions: UEQURQQQSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_19.mapfuzzed actions: EU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_20.mapfuzzed actions: LDUQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_22.mapfuzzed actions: UEQRUQSDQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_23.mapfuzzed actions: QEWURRLQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_24.mapfuzzed actions: SRUDDLL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_25.mapfuzzed actions: WQEWQDRWUS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_26.mapfuzzed actions: WWUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_27.mapfuzzed actions: LSQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_28.mapfuzzed actions: QQUWL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_29.mapfuzzed actions: QSUS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_30.mapfuzzed actions: USEDDWSU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_31.mapfuzzed actions: UQUSDEQSS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_32.mapfuzzed actions: DRLQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_33.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_34.mapfuzzed actions: UEL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_35.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_36.mapfuzzed actions: WSRQRD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_37.mapfuzzed actions: SDR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_38.mapfuzzed actions: LE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_39.mapfuzzed actions: LWDQRLERL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_40.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_41.mapfuzzed actions: RU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_42.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_43.mapfuzzed actions: USSUQL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_44.mapfuzzed actions: DQUQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_45.mapfuzzed actions: RRUSLDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_46.mapfuzzed actions: USUEUEDWQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_47.mapfuzzed actions: ELRQDQDQS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_48.mapfuzzed actions: ESR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_49.mapfuzzed actions: RRSWLQLR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_50.mapfuzzed actions: SRUEDE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_51.mapfuzzed actions: QDQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.right(Pacman.java:182)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:263)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_52.mapfuzzed actions: WLLEERSRQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_53.mapfuzzed actions: USQWLSLED
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_55.mapfuzzed actions: DWDSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_56.mapfuzzed actions: UWE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_57.mapfuzzed actions: R
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_59.mapfuzzed actions: DQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_60.mapfuzzed actions: WRLLSUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_61.mapfuzzed actions: WWSWLQQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_62.mapfuzzed actions: RU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_63.mapfuzzed actions: QUSURRLD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_64.mapfuzzed actions: LDEWQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_65.mapfuzzed actions: LDDUWQQER
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_66.mapfuzzed actions: WWDUWS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_67.mapfuzzed actions: RWUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_68.mapfuzzed actions: WERSDR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_69.mapfuzzed actions: URWDDDSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_70.mapfuzzed actions: WDSEUWS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_71.mapfuzzed actions: ELRRUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_72.mapfuzzed actions: RS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_73.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_74.mapfuzzed actions: SWRELDQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_75.mapfuzzed actions: EDQDL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_76.mapfuzzed actions: WDEDE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_77.mapfuzzed actions: QR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_78.mapfuzzed actions: WDDUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_79.mapfuzzed actions: SRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_80.mapfuzzed actions: SU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_81.mapfuzzed actions: DU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_82.mapfuzzed actions: QLEQQWEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_83.mapfuzzed actions: UUUQR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_84.mapfuzzed actions: DQDSDQEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_85.mapfuzzed actions: LLLSRREDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_86.mapfuzzed actions: WSURWLUUWE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_87.mapfuzzed actions: WSRDLLL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_88.mapfuzzed actions: SDDUUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_89.mapfuzzed actions: UEDLDRUREE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_90.mapfuzzed actions: SURW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_91.mapfuzzed actions: WSLRSDWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_92.mapfuzzed actions: REUSUUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_93.mapfuzzed actions: EQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_94.mapfuzzed actions: DW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_95.mapfuzzed actions: QWQWE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_96.mapfuzzed actions: QL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_97.mapfuzzed actions: WWQURR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_98.mapfuzzed actions: UR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_99.mapfuzzed actions: DDWDU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_100.mapfuzzed actions: UQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_101.mapfuzzed actions: REQWUDREE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.left(Pacman.java:173)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:260)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_102.mapfuzzed actions: UDWRSLEUSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_104.mapfuzzed actions: WUEWDR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_105.mapfuzzed actions: SLDRRUREQQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_106.mapfuzzed actions: ESWQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_109.mapfuzzed actions: QQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_110.mapfuzzed actions: UD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_111.mapfuzzed actions: W
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_112.mapfuzzed actions: DRRQQEQSU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_113.mapfuzzed actions: QEELW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_114.mapfuzzed actions: SWWQEQEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_115.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_116.mapfuzzed actions: EEQULQUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_117.mapfuzzed actions: EWRDSRUDU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_118.mapfuzzed actions: RLDSLW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_119.mapfuzzed actions: DQLDLDR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_120.mapfuzzed actions: EEWSDDULDE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_121.mapfuzzed actions: RE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_122.mapfuzzed actions: QSWLEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_124.mapfuzzed actions: LQQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_125.mapfuzzed actions: RESURLDR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_126.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_127.mapfuzzed actions: WQQSESUUSU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_128.mapfuzzed actions: UWWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_129.mapfuzzed actions: EULDDRD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_130.mapfuzzed actions: QEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.left(Pacman.java:173)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:260)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_131.mapfuzzed actions: USSLR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_132.mapfuzzed actions: DUUDRRLQLL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_133.mapfuzzed actions: UDESDDSQQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_134.mapfuzzed actions: UR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_135.mapfuzzed actions: RSWWQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_136.mapfuzzed actions: QRREDLDW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_137.mapfuzzed actions: DEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_138.mapfuzzed actions: SQQDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_139.mapfuzzed actions: DU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_140.mapfuzzed actions: LDERDWDRR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_141.mapfuzzed actions: LW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_142.mapfuzzed actions: DSRR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_143.mapfuzzed actions: LSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_144.mapfuzzed actions: RLRQSRSQSL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_145.mapfuzzed actions: DWSQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_146.mapfuzzed actions: DEQUDUUEDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_147.mapfuzzed actions: W
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_148.mapfuzzed actions: URU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_149.mapfuzzed actions: UD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_150.mapfuzzed actions: ELR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_151.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_152.mapfuzzed actions: UUDWSQUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_154.mapfuzzed actions: WD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_155.mapfuzzed actions: QDEWRR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_156.mapfuzzed actions: WQSQQEULQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_157.mapfuzzed actions: LSQQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_158.mapfuzzed actions: URQDQWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_159.mapfuzzed actions: USWW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_160.mapfuzzed actions: QEWLDLL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_161.mapfuzzed actions: LUWERERD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_162.mapfuzzed actions: QLWWQUSSUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_163.mapfuzzed actions: UL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_165.mapfuzzed actions: QLWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_166.mapfuzzed actions: EQE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_167.mapfuzzed actions: UDQELLDE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_169.mapfuzzed actions: SEDEL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_170.mapfuzzed actions: QQUQL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_171.mapfuzzed actions: QSWEDQUUEE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_172.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_173.mapfuzzed actions: DQDQDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_174.mapfuzzed actions: LSSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_175.mapfuzzed actions: LSERSUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_176.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_177.mapfuzzed actions: SRDWW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_178.mapfuzzed actions: SD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_179.mapfuzzed actions: RQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_180.mapfuzzed actions: ERUDL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_181.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_182.mapfuzzed actions: ESSDR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_183.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_184.mapfuzzed actions: WWWWRSWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_185.mapfuzzed actions: USRQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_186.mapfuzzed actions: QRLWES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_187.mapfuzzed actions: EEQWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_188.mapfuzzed actions: SEWQRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_189.mapfuzzed actions: RDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_190.mapfuzzed actions: LRQSURWU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_191.mapfuzzed actions: QLW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_192.mapfuzzed actions: EQEWQQWDWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_193.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_194.mapfuzzed actions: DEDLDRSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No food
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_195.mapfuzzed actions: UDE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_196.mapfuzzed actions: SLQWQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_197.mapfuzzed actions: SDSRQUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_198.mapfuzzed actions: WDEUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_199.mapfuzzed actions: WQWSDWWRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_200.mapfuzzed actions: DDUEWWWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_201.mapfuzzed actions: WWULD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_202.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_203.mapfuzzed actions: WS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_204.mapfuzzed actions: DWEEQL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_205.mapfuzzed actions: LS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_206.mapfuzzed actions: QSWDUW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_207.mapfuzzed actions: UQRLUWSSS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_208.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_209.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_210.mapfuzzed actions: U
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_211.mapfuzzed actions: SWEWSQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_212.mapfuzzed actions: ELDSDURUSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_213.mapfuzzed actions: EUQS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_215.mapfuzzed actions: SDDWE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_216.mapfuzzed actions: W
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_217.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_219.mapfuzzed actions: WSLQELR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_220.mapfuzzed actions: LRE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_221.mapfuzzed actions: QR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_222.mapfuzzed actions: SE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_223.mapfuzzed actions: QSQDWLSRQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_224.mapfuzzed actions: EU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_225.mapfuzzed actions: DUDRRLDWS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_226.mapfuzzed actions: DRSULLRD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_227.mapfuzzed actions: UWUL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_228.mapfuzzed actions: SSUW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_229.mapfuzzed actions: DU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_230.mapfuzzed actions: SE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_232.mapfuzzed actions: SQWRELUUS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_233.mapfuzzed actions: LQDSWEEURQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_234.mapfuzzed actions: WEQDUURUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_235.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_236.mapfuzzed actions: DSEEUSU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.left(Pacman.java:173)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:260)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_237.mapfuzzed actions: SULL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_238.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_239.mapfuzzed actions: LSEDLWRRR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_240.mapfuzzed actions: WU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_241.mapfuzzed actions: LSEQES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_242.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_243.mapfuzzed actions: UDLRUSQS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_244.mapfuzzed actions: DQR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_245.mapfuzzed actions: QD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_246.mapfuzzed actions: DWU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_247.mapfuzzed actions: UU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_248.mapfuzzed actions: EDUQQEDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_249.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_250.mapfuzzed actions: SSLRDSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_251.mapfuzzed actions: DUREQSDDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.left(Pacman.java:173)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:260)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_252.mapfuzzed actions: DULSULR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.right(Pacman.java:182)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:263)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_253.mapfuzzed actions: USWSDEWSRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_255.mapfuzzed actions: WLWW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_256.mapfuzzed actions: SQESWRE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_257.mapfuzzed actions: SSREQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_258.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_260.mapfuzzed actions: WDSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_261.mapfuzzed actions: WWLUS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_262.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_263.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_264.mapfuzzed actions: EQSU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_265.mapfuzzed actions: DLL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_266.mapfuzzed actions: QSEE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_267.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_268.mapfuzzed actions: ESWWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_269.mapfuzzed actions: RU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_271.mapfuzzed actions: WSDWQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_272.mapfuzzed actions: R
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_273.mapfuzzed actions: W
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_274.mapfuzzed actions: USDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_275.mapfuzzed actions: UWU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_276.mapfuzzed actions: WEWW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_278.mapfuzzed actions: LWDW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_279.mapfuzzed actions: WRLQSR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_280.mapfuzzed actions: LUDLD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_281.mapfuzzed actions: LLESDEUDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_282.mapfuzzed actions: LSRQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_283.mapfuzzed actions: WSERD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_284.mapfuzzed actions: SWQLUWQLQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_285.mapfuzzed actions: R
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_286.mapfuzzed actions: ELSSWLEQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_287.mapfuzzed actions: SDQUWRWDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_288.mapfuzzed actions: RSEQQSWQSL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_289.mapfuzzed actions: W
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_290.mapfuzzed actions: UDEEDEWURU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_291.mapfuzzed actions: LUUDLWRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_292.mapfuzzed actions: LQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_293.mapfuzzed actions: DRELQUW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_294.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_295.mapfuzzed actions: LUUSUWSWES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_296.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_297.mapfuzzed actions: QSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_298.mapfuzzed actions: DWLE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_299.mapfuzzed actions: WRUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_301.mapfuzzed actions: LWRURDDLSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_302.mapfuzzed actions: DQWDERS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_303.mapfuzzed actions: LQQL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_304.mapfuzzed actions: QDQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_305.mapfuzzed actions: SSDSEREDQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_306.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_307.mapfuzzed actions: RDQEWUS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_308.mapfuzzed actions: LRQLRSQLWU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_309.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_310.mapfuzzed actions: WRWQUUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_311.mapfuzzed actions: WU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_312.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_313.mapfuzzed actions: EELUWSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_314.mapfuzzed actions: WWUW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_315.mapfuzzed actions: SWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_316.mapfuzzed actions: QR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_317.mapfuzzed actions: LE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_318.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_319.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_320.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_321.mapfuzzed actions: QQDLQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_322.mapfuzzed actions: WWLEWQLEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_323.mapfuzzed actions: RWLUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_324.mapfuzzed actions: WWWWWRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_325.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_327.mapfuzzed actions: QSSUWSES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_328.mapfuzzed actions: UUQWRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_329.mapfuzzed actions: RRLLERQR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_330.mapfuzzed actions: EQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_331.mapfuzzed actions: DUQWUUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_332.mapfuzzed actions: QSSRR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_333.mapfuzzed actions: Q
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_334.mapfuzzed actions: QDQE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_335.mapfuzzed actions: RWLE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_336.mapfuzzed actions: DQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_337.mapfuzzed actions: R
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_338.mapfuzzed actions: SW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_339.mapfuzzed actions: SSULSSSUQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_340.mapfuzzed actions: LDWSUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_341.mapfuzzed actions: U
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_342.mapfuzzed actions: LQQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_343.mapfuzzed actions: QSLSQUEDU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_344.mapfuzzed actions: USD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_345.mapfuzzed actions: RLLS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_346.mapfuzzed actions: USLULUUDL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_347.mapfuzzed actions: WQWWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_348.mapfuzzed actions: EW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_349.mapfuzzed actions: USUWESDRE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_350.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_352.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_353.mapfuzzed actions: QULWSEWRE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_354.mapfuzzed actions: DUDQQUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_356.mapfuzzed actions: QLUSLE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No food
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_357.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No food
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_358.mapfuzzed actions: R
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_359.mapfuzzed actions: LURSDSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_360.mapfuzzed actions: D
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_361.mapfuzzed actions: URDUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_362.mapfuzzed actions: QQS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_363.mapfuzzed actions: EQULUSWDU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_364.mapfuzzed actions: QSELURLUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_365.mapfuzzed actions: U
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_366.mapfuzzed actions: SDRSLDQQUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_367.mapfuzzed actions: RSWRUWSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_368.mapfuzzed actions: RDEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_369.mapfuzzed actions: DWUS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_370.mapfuzzed actions: QRRWDSRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_371.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_372.mapfuzzed actions: WEDQULLDE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_373.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_374.mapfuzzed actions: U
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_375.mapfuzzed actions: ERSQDRLQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_376.mapfuzzed actions: UQERWSR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_377.mapfuzzed actions: RULDUSSSQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_378.mapfuzzed actions: SREEWRRQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_380.mapfuzzed actions: USERUDEUSR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_381.mapfuzzed actions: UDW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_382.mapfuzzed actions: ESQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_383.mapfuzzed actions: QUUULDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_385.mapfuzzed actions: DQEEWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_386.mapfuzzed actions: RS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_387.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_388.mapfuzzed actions: EQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_389.mapfuzzed actions: QQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_390.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_391.mapfuzzed actions: SLDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_392.mapfuzzed actions: URRURW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_393.mapfuzzed actions: LLUDUSQWQL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_394.mapfuzzed actions: DULQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_395.mapfuzzed actions: LDDUWRED
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_396.mapfuzzed actions: SUUUSQULR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_397.mapfuzzed actions: ERSRUDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_398.mapfuzzed actions: LSWQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_399.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_400.mapfuzzed actions: L
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_401.mapfuzzed actions: SR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_402.mapfuzzed actions: SR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_403.mapfuzzed actions: WWQER
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_404.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_405.mapfuzzed actions: ULEQLWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_406.mapfuzzed actions: WWWWSEWUEE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_407.mapfuzzed actions: D
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_408.mapfuzzed actions: ELUWSEDQSS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_409.mapfuzzed actions: QUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_410.mapfuzzed actions: LRLSDRDUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_412.mapfuzzed actions: UELWEWL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_413.mapfuzzed actions: UESWUSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_414.mapfuzzed actions: QD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_415.mapfuzzed actions: SRDDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_416.mapfuzzed actions: LWEERS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_417.mapfuzzed actions: U
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_418.mapfuzzed actions: WQLLW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_419.mapfuzzed actions: QRDDQSDW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.left(Pacman.java:173)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:260)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_420.mapfuzzed actions: QQQWWRDQSL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_421.mapfuzzed actions: QRUUSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_422.mapfuzzed actions: QELSDEWQR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_423.mapfuzzed actions: QL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_424.mapfuzzed actions: QLLLE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_425.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_426.mapfuzzed actions: EUDEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_427.mapfuzzed actions: UWQLULD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_428.mapfuzzed actions: DUD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_429.mapfuzzed actions: LRQRU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_430.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_432.mapfuzzed actions: UE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_433.mapfuzzed actions: D
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_434.mapfuzzed actions: RRELWRUQQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_435.mapfuzzed actions: DSLSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.movePlayer(Game.java:284)
+	at jpacman.model.Engine.movePlayer(Engine.java:203)
+	at jpacman.controller.Pacman.left(Pacman.java:173)
+	at jpacman.controller.Pacman.mainFuzzing(Pacman.java:260)
+	at jpacman.controller.Pacman.main(Pacman.java:205)
+
+return_code: 1
+fuzzed filename: fuzz_436.mapfuzzed actions: SSL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_437.mapfuzzed actions: UQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_438.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_439.mapfuzzed actions: EDELESU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_440.mapfuzzed actions: WLE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_441.mapfuzzed actions: USWDUSSL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_442.mapfuzzed actions: RSUUQLL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_443.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_444.mapfuzzed actions: WLERDRSWS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_445.mapfuzzed actions: SDSQURUU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_446.mapfuzzed actions: RLDDSEE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_447.mapfuzzed actions: RS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_448.mapfuzzed actions: QEWRDRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_449.mapfuzzed actions: ESQUDWEUEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_450.mapfuzzed actions: QR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_453.mapfuzzed actions: QWQEWWD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_454.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_455.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_456.mapfuzzed actions: EESEQE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_457.mapfuzzed actions: UWLRD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No food
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_459.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_461.mapfuzzed actions: WRDWEREWDL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_462.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_463.mapfuzzed actions: LSULUUED
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_464.mapfuzzed actions: UEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_465.mapfuzzed actions: DSLQL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_466.mapfuzzed actions: RWSQRSQELS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_467.mapfuzzed actions: R
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No player is set
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_468.mapfuzzed actions: EQRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_469.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_470.mapfuzzed actions: DRSWDL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_471.mapfuzzed actions: LLEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_472.mapfuzzed actions: UL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_473.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_474.mapfuzzed actions: RQDWRES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_475.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_476.mapfuzzed actions: RUW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_477.mapfuzzed actions: DDLDREDD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_478.mapfuzzed actions: DWQRQRW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_479.mapfuzzed actions: DUEQW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_480.mapfuzzed actions: RRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_482.mapfuzzed actions: ULQQULQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_483.mapfuzzed actions: UU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_484.mapfuzzed actions: LUQWLUUERQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_485.mapfuzzed actions: WWSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_486.mapfuzzed actions: RDLU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_487.mapfuzzed actions: QRWQLSEEWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_488.mapfuzzed actions: WRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_489.mapfuzzed actions: RQRQWLWSEU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_490.mapfuzzed actions: QERDERSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_491.mapfuzzed actions: QRDQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_492.mapfuzzed actions: WRDW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_493.mapfuzzed actions: UWRRQSEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_494.mapfuzzed actions: LSUWEEWW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_495.mapfuzzed actions: DWQWR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_496.mapfuzzed actions: REDS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_498.mapfuzzed actions: ERRDWQQD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_499.mapfuzzed actions: QU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_500.mapfuzzed actions: EQULDWSDLS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_501.mapfuzzed actions: ULSUQQE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_502.mapfuzzed actions: ESUUUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_503.mapfuzzed actions: RRDLDDEUQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_504.mapfuzzed actions: WSE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_505.mapfuzzed actions: WUDQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_506.mapfuzzed actions: RDUES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_507.mapfuzzed actions: WSQSWDQSQU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_508.mapfuzzed actions: SQDRWSS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_509.mapfuzzed actions: E
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_510.mapfuzzed actions: DLWRSQRQEQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_511.mapfuzzed actions: WD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_512.mapfuzzed actions: WEUQQEL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_513.mapfuzzed actions: SR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 7
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_514.mapfuzzed actions: LSRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_515.mapfuzzed actions: WQ
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_516.mapfuzzed actions: DQQUQWE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_517.mapfuzzed actions: DUR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_518.mapfuzzed actions: DDLQUUDDER
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_519.mapfuzzed actions: UUSWRS
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_520.mapfuzzed actions: 
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_521.mapfuzzed actions: WR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_522.mapfuzzed actions: QQRERRL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_523.mapfuzzed actions: LE
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_524.mapfuzzed actions: WULQEQLSSW
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_525.mapfuzzed actions: QELQQLR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_526.mapfuzzed actions: RLRQES
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_527.mapfuzzed actions: WLURLSD
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_528.mapfuzzed actions: RLR
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** No lines
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_529.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: java.lang.ArrayIndexOutOfBoundsException: Index -1 out of bounds for length 1
+	at jpacman.model.Board.getCell(Board.java:89)
+	at jpacman.model.Cell.cellAtOffset(Cell.java:165)
+	at jpacman.model.Game.moveMonster(Game.java:396)
+	at jpacman.model.Engine.moveMonster(Engine.java:222)
+	at jpacman.controller.RandomMonsterMover.doTick(RandomMonsterMover.java:66)
+	at jpacman.controller.AbstractMonsterController.actionPerformed(AbstractMonsterController.java:83)
+	at java.desktop/javax.swing.Timer.fireActionPerformed(Timer.java:311)
+	at java.desktop/javax.swing.Timer$DoPostEvent.run(Timer.java:243)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+
+return_code: 1
+fuzzed filename: fuzz_530.mapfuzzed actions: S
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: **** More than one player
+
+stderr: 
+return_code: 10
+fuzzed filename: fuzz_531.mapfuzzed actions: UDL
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
+stdout: 
+stderr: Execution timed out
+return_code: -1
+fuzzed filename: fuzz_532.mapfuzzed actions: DLU
+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+=+
