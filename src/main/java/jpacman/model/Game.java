@@ -50,7 +50,6 @@ public class Game {
      */
     public Game() {
         this(DEFAULT_WORLD_MAP);
-        movedStack.add(new Vector<Move>());
     }
 
     /**
@@ -133,7 +132,6 @@ public class Game {
         "W00F00WWWW000000WWWW",
         "WWWWWWWWWWWWWWWWWWWW"
     };
-
 
     /**
      * Get the board of this game, which can be null if

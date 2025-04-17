@@ -36,6 +36,7 @@ import jpacman.controller.ImageFactoryTest;
     EngineTest.class,
     ObserverTest.class,
     PlayerMoveTest.class,
+    PlayerTest.class,
     MonsterMoveTest.class,
     ImageFactoryTest.class
 })

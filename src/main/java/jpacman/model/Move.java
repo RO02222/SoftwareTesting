@@ -67,8 +67,8 @@ public abstract class Move {
     public Move(MovingGuest fromGuest, Cell toCell) {
         assert fromGuest != null;
         assert fromGuest.getLocation() != null;
-        assert toCell == null
-        || fromGuest.getLocation().getBoard() == toCell.getBoard();
+        assert toCell != null;
+        assert fromGuest.getLocation().getBoard() == toCell.getBoard();
         this.mover = fromGuest;
         this.fromCell = fromGuest.getLocation();
         this.to = toCell;
@@ -208,10 +208,9 @@ public abstract class Move {
      * precondition: the old cell is empty, the target cell is occupied by the mover.
      */
     protected void undo() {
-        assert fromCell.getInhabitant() == null : "old cell should be freed";
+        assert fromCell.getInhabitant() == null : "old cell should be free";
         assert moveDone();
         assert initialized();
-
 
         mover.deoccupy();
         mover.occupy(fromCell);

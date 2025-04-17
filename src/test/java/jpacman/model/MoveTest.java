@@ -69,4 +69,22 @@ public abstract class MoveTest extends GameTestCase {
      * @return Instantiated Move subclass object.
      */
     protected abstract Move createMove(Cell target);
+
+
+    @Test(expected = AssertionError.class)
+    public void testCreateMoveToNull() {
+        aMove = createMove(null);
+    }
+
+    @Test
+    public void testTryMoveToGuestPreconditionGuestNull() {
+        aMove = createMove(emptyCell);
+        assertFalse(aMove.tryMoveToGuestPrecondition(null));
+    }
+
+    @Test
+    public void testTryMoveToGuestPreconditionAlreadyInit() {
+        aMove = createMove(theFood.getLocation());
+        assertFalse(aMove.tryMoveToGuestPrecondition(theFood));
+    }
 }

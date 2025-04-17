@@ -314,4 +314,30 @@ public class GameTest extends GameTestCase {
         assertFalse(segment1.isEmpty());
         assertEquals(segment1.firstElement(), move1);
     }
+
+    @Test
+    public void testFinishGame() {
+        for (int i = 0; i < theGame.boardWidth() * theGame.boardHeight(); i++) {
+            var cell = theGame.getBoard().getCell( i% theGame.boardWidth(), i/theGame.boardHeight());
+            var inhab = cell.getInhabitant();
+            if (inhab instanceof Food) {
+                var move = new PlayerMove(thePlayer, cell);
+                move.apply();
+            }
+        }
+        assertTrue(theGame.gameOver());
+        assertTrue(theGame.playerWon());
+    }
+
+    @Test
+    public void testMorePointsEatenThanTotal() {
+        theGame.getPlayer().eat(999);
+        assertFalse(theGame.invariant());
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testInvalidCustomMap() {
+        var map = new String[]{"WWW", "WWW"};
+        var game = new Game(map);
+    }
 }
