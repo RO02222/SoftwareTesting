@@ -143,7 +143,7 @@ public class ImageFactory {
      */
     private Image getImage(String name) throws IOException {
         assert name != null;
-        URL picfile = getClass().getClassLoader().getResource(name);
+        URL picfile = Thread.currentThread().getContextClassLoader().getResource(name);
         if (picfile == null) {
             throw new IOException("Can't load image: "  + name);
         }

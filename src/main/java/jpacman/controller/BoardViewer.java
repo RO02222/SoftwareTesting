@@ -145,6 +145,14 @@ public class BoardViewer extends JPanel {
     }
 
     /**
+     * the step of the animation sequence
+     * @return animationCount
+     */
+    public int getAnimationCount() {
+        return animationCount;
+    }
+
+    /**
      * JComponent method invoked when the board needs to be drawn.
      * @param g The graphics to paint the board on.
      */

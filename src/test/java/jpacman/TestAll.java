@@ -1,13 +1,12 @@
 package jpacman;
 
+import jpacman.controller.*;
 import jpacman.model.*;
 import junit.framework.JUnit4TestAdapter;
 
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 import org.junit.runners.Suite.SuiteClasses;
-
-import jpacman.controller.ImageFactoryTest;
 
 
 /**
@@ -28,17 +27,22 @@ import jpacman.controller.ImageFactoryTest;
  */
 @RunWith(Suite.class)
 @SuiteClasses({
-    PacmanTest.class,
     BoardTest.class,
     CellTest.class,
+    EngineTest.class,
     FoodTest.class,
     GameTest.class,
-    EngineTest.class,
+    GuestTest.class,
+    MonsterMoveTest.class,
     ObserverTest.class,
     PlayerMoveTest.class,
     PlayerTest.class,
-    MonsterMoveTest.class,
-    ImageFactoryTest.class
+
+    BoardViewerTest.class,
+    ImageFactoryTest.class,
+    PacmanTest.class,
+    PacmanUiTest.class,
+    RandomMonsterMoverTest.class
 })
 
 public final class TestAll  {
