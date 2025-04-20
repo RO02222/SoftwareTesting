@@ -1,4 +1,6 @@
 /target
 /LittleDarwinResults
+/LittleDarwin
+/PITest
 /fuzzer/fuzzed_maps
 /fuzzer/fuzzing.log

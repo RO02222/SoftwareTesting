@@ -246,4 +246,46 @@ public class CellTest {
             assert false;
         }
     }
+
+    @Test(expected = AssertionError.class)
+    public void testBoardInvariant() {
+        try {
+            Cell cell = new Cell(0, 0, null);
+        } catch (Exception e) {
+            assert false;
+        }
+    }
+
+    @Test
+    public void testFreeWhileUnOccupied() {
+        Cell cell = new Cell(1, 1, aBoard);
+        cell.free();
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testGuestInvariant1()
+    {
+        try {
+            Cell cell = new Cell(1, 1, aBoard);
+            Player player = new Player();
+            cell.setGuest(player);
+        } catch (Exception e) {
+            assert false;
+        }
+    }
+
+    @Test(expected = AssertionError.class)
+    public void testGuestInvariant2()
+    {
+        try {
+            Cell cell = new Cell(1, 1, aBoard);
+            Player player = new Player();
+            player.occupy(cell);
+            cell.setGuest(player);
+            Monster monster = new Monster();
+            cell.setGuest(monster);
+        } catch (Exception e) {
+            assert false;
+        }
+    }
 }
